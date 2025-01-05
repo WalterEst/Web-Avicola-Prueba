@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/catalog/catalogo",
+    "/contact/contacto",
+    "/home/inicio",
+    "/information/informacion",
+    "/recipes/recetas"
+  ]
+}
