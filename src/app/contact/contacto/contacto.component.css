@@ -3,7 +3,7 @@
     align-items: center;
     background-color: #fff5e8;
     width: 60%;
-    border-radius: 2%;
+    border-radius: 10px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -87,8 +87,7 @@ span {
 /* Responsivo */
 @media (max-width: 768px) {
     .main-cont {
-        max-width: 100%;
-        padding: 16px;
+        width: 85%;
     }
 
     .map-frame {
@@ -106,12 +105,3 @@ span {
     }
 }
 
-@media (max-width: 480px) {
-    .map-frame {
-        height: 250px;
-    }
-
-    .main-cont h2 {
-        font-size: 1.6rem;
-    }
-}
