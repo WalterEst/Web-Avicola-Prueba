@@ -1,0 +1,198 @@
+/* Código original */
+.body {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60%;
+  border-radius: 2%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px; 
+  font-family: "Kanit", serif;
+}
+.about-eggs {
+  padding: 20px;
+  font-family: "Kanit", serif;
+  text-align: justify;
+}
+
+/* Nutricion */
+.nutrition-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+  gap: 15px; /* Espacio entre filas y columnas */
+}
+.nutrition-info div {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.nutrition-info div:nth-child(2n-1) {
+  border-bottom: 1px solid #c9b697;
+  width: 205%;
+}
+
+.nutrition-info b {
+  display: block;
+  color: #b3a388;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.nutrition-info p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.nutrition-info div:first-child {
+  border-top: 1px solid #c9b697;
+  padding-top: 10px;
+}
+
+.nutrition-info div:last-child p {
+  border-bottom: none;
+}
+
+b {
+  color: #b3a388; 
+  margin-bottom: 10%;
+}
+
+/* Tipos y clasificacion */
+.egg-types, .egg-clasificacion {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.type, .clasificacion {
+  text-align: center;
+  flex: 1 1 150px;
+}
+.type img, .clasificacion img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Consejos */
+.storage-cooking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.storage-cooking-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c9b697;
+}
+.storage-cooking-info div:first-child {
+  border-top: 1px solid #c9b697;
+  margin-top: 30px;
+}
+.storage-cooking-info div:last-child {
+  border-bottom: none;
+}
+
+.storage-cooking-info b {
+  margin-right: 15px;
+  min-width: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.storage-cooking-info p {
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+/* fun fact */
+.fact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 0;
+}
+
+.fact-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 100%;
+}
+.fact-item i {
+  font-size: 24px;
+  color: #b3a388;
+}
+
+.fact-text {
+  flex-grow: 1;
+}
+
+.fact-text b {
+  color: #2b2b2b;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fact-text p {
+  color: #b3a388;
+  margin: 0;
+}
+
+.fact-item .number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* Diseño responsivo */
+@media (max-width: 1024px) {
+  .body {
+    width: 80%;
+  }
+
+  .nutrition-info {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .egg-types, .egg-clasificacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storage-cooking-info div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .storage-cooking-info b {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 90%;
+  }
+
+  .fact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fact-item i {
+    align-self: center;
+  }
+
+  .fact-text b {
+    margin-bottom: 10px;
+  }
+}
